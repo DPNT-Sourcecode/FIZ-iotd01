@@ -35,15 +35,10 @@ public class FizzBuzzSolution {
     }
     
     private boolean hasSameDigits(String number){
-		int result=0;
-    	for (int i=1 ; i<=number.length();i++){
-    		int currentChar=number.charAt(i);
-    		if((result&(1<<currentChar))>0){
-    			return true;
-    		}
-    		result = result|(1<<currentChar);
-    	}
-    	return false;
+		
+    	if (!(number.matches("([0-9]){6}"))|| number.matches("([0-9])\\1{5}"))
+    	return true;
+    	else return false;
     	
     }
 
