@@ -21,7 +21,7 @@ public class FizzBuzzSolution {
     	}
     	if((number>10 && hasSameDigits(number.toString()))){
     		
-    		if(sb.length()!=0){    			
+    		if(sb.length()!=0 && sb.toString().contains("fizz buzz")){    			
         		sb.append(" deluxe");       		
     		
     	    }
