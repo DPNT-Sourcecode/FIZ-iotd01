@@ -5,8 +5,11 @@ import befaster.runner.SolutionNotImplementedException;
 public class SumSolution {
 
     public int compute(int x, int y) {
-    	return x+y;
-        //throw new SolutionNotImplementedException();
+    	if((x>0 && x<100)&&(y>0 && y<100)){
+    	 return x+y;
+    	}
+    	else
+         throw new SolutionNotImplementedException();
     }
 
 }
