@@ -36,10 +36,7 @@ public class FizzBuzzSolution {
     
     private boolean hasSameDigits(String number){
 		
-    	if ((number.matches("([0-9]){6}"))|| number.matches("([0-9])\\1{5}"))
-    	return true;
-    	else return false;
-    	
+    	return number.matches("(\\d)\\1+");
     }
 
 }
