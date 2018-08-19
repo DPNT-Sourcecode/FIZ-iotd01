@@ -22,11 +22,9 @@ public class FizzBuzzSolution {
     	if((number>10 && hasSameDigits(number.toString()))){
     		
     		if(sb.length()!=0){    			
-        		sb.append(" deluxe");
-        		}else{
-        			sb.append("deluxe");
-        	    } 
+        		sb.append(" deluxe");       		
     		
+    	    }
     	}
     	if(sb.length()==0){
     		return number.toString();
