@@ -25,7 +25,7 @@ public class FizzBuzzSolution {
     			sb.append("deluxe");
     		}
     		
-    		if(sb.length()!=0 && sb.toString().contains("fizz buzz")){    			
+    		if(sb.length()!=0){    			
         		sb.append(" deluxe");       		
     		
     	    }
