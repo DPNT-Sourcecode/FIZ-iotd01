@@ -23,9 +23,7 @@ public class FizzBuzzSolution {
     		
     		if(sb.length()==0){
     			sb.append("deluxe");
-    		}
-    		
-    		if(sb.length()!=0){    			
+    		}else{    			
         		sb.append(" deluxe");       		
     		
     	    }
