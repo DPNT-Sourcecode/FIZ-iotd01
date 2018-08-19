@@ -12,13 +12,21 @@ public class FizzBuzzSolution {
     		sb.append("fizz");
     	}
     	if((number%5==0)||(number.toString().indexOf("5")!=-1)){
-    		if(sb.length()!=0){
-    			
+    		if(sb.length()!=0){    			
     		sb.append(" buzz");
     		}else{
     			sb.append("buzz");
     	    }  		
     	
+    	}
+    	if((number>10 && hasSameDigits(number.toString()))){
+    		
+    		if(sb.length()!=0){    			
+        		sb.append(" deluxe");
+        		}else{
+        			sb.append("deluxe");
+        	    } 
+    		
     	}
     	if(sb.length()==0){
     		return number.toString();
@@ -26,6 +34,14 @@ public class FizzBuzzSolution {
     	
     	
        return sb.toString(); 
+    }
+    
+    private boolean hasSameDigits(String number){
+		
+    	if(!(number.matches("([0-9]){4}"))|| number.matches("([0-9])\\1{3}"))
+    	return true;
+    	else return false;
+    	
     }
 
 }
