@@ -8,10 +8,10 @@ public class FizzBuzzSolution {
     
     public String fizzBuzz(Integer number) {
     	StringBuilder sb = new StringBuilder();
-    	if((number%3==0)&&(number.toString().indexOf("3")!=-1)){
+    	if((number%3==0)||(number.toString().indexOf("3")!=-1)){
     		sb.append("fizz");
     	}
-    	if((number%5==0)&&(number.toString().indexOf("5")!=-1)){
+    	if((number%5==0)||(number.toString().indexOf("5")!=-1)){
     		if(sb.length()!=0){
     			
     		sb.append(" buzz");
@@ -20,7 +20,7 @@ public class FizzBuzzSolution {
     	    }  		
     	
     	}
-    	if((number%3!=0)&&(number%5!=0)){
+    	if(sb.length()==0){
     		return number.toString();
     	}
     	
