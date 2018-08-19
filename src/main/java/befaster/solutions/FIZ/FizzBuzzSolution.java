@@ -19,25 +19,26 @@ public class FizzBuzzSolution {
     	    }  		
     	
     	}
-    	if((number>10 && hasSameDigits(number.toString())&&number%2==0)){
-    		
+    	if(((number%3==0)&&(number.toString().indexOf("3")!=-1))||((number%5==0)&&(number.toString().indexOf("5")!=-1))){
+    		if(number%2==0){
     		if(sb.length()==0){
     			sb.append("deluxe");
     		}else{    			
         		sb.append(" deluxe");       		
     		
     	    }
+    		}else{
+    			
+    			if(sb.length()==0){
+        			sb.append("fake deluxe");
+        		}else{    			
+            		sb.append(" fake deluxe");       		
+        		
+        	    }
+    			
+    		}
     	}
-    	
-      if((number>10 && hasSameDigits(number.toString())&&number%2!=0)){
-    		
-    		if(sb.length()==0){
-    			sb.append("fake deluxe");
-    		}else{    			
-        		sb.append(" fake deluxe");       		
-    		
-    	    }
-    	}
+    
     	if(sb.length()==0){
     		return number.toString();
     	}
