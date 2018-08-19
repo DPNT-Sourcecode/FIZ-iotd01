@@ -36,7 +36,7 @@ public class FizzBuzzSolution {
     
     private boolean hasSameDigits(String number){
 		int result=0;
-    	for (int i=0 ; i<=number.length();i++){
+    	for (int i=1 ; i<=number.length();i++){
     		int currentChar=number.charAt(i)-'1';
     		if((result&(1<<currentChar))>0){
     			return true;
