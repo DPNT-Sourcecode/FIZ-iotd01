@@ -6,7 +6,7 @@ public class HelloSolution {
     public String hello(String friendName) {
     	String helloString=null;
     	if(friendName!=null&&!friendName.isEmpty()){
-    		helloString="Hello,"+friendName+"!";	
+    		helloString="Hello, "+ friendName+"!";	
     	return helloString;
     	
     	}
