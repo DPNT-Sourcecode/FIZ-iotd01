@@ -19,12 +19,22 @@ public class FizzBuzzSolution {
     	    }  		
     	
     	}
-    	if((number>10 && hasSameDigits(number.toString()))){
+    	if((number>10 && hasSameDigits(number.toString())&&number%2==0)){
     		
     		if(sb.length()==0){
     			sb.append("deluxe");
     		}else{    			
         		sb.append(" deluxe");       		
+    		
+    	    }
+    	}
+    	
+      if((number>10 && hasSameDigits(number.toString())&&number%2!=0)){
+    		
+    		if(sb.length()==0){
+    			sb.append("fake deluxe");
+    		}else{    			
+        		sb.append(" fake deluxe");       		
     		
     	    }
     	}
